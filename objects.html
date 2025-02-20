@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <h1>JavaScript Objects</h1>
+
+    <h2>The Object.entries() Method</h2>
+
+    <p>Object.entries() makes it simple to use objects in loops:</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        // Create a Object
+
+        var fruits = { Bananas: 300, Oranges: 200, Apples: 500 };
+
+        var text = "";
+
+        for (let [fruit, amount] of Object.entries(fruits)) {
+
+            text = text + fruit + ": " + amount + "<br>";
+
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+
+</body>
+
+</html>
