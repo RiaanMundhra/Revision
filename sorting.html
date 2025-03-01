@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="456"></p>
+    <p id="654"></p>
+    <script>
+        var nums = [1,56,84,9,45];
+        function compare(a,b){
+            return a - b;
+        }
+        document.getElementById("456").innerHTML = nums.sort(compare);
+        function compare2(a, b) {
+                return b - a;
+            }
+            document.getElementById("654").innerHTML = nums.sort(compare2);
+
+    </script>
+    
+</body>
+</html>
